@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomadiac Blog</title>
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            color: #e0e0e0;
+            background-color: #0a0a0a;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            padding: 2em;
+            text-align: center;
+            border-bottom: 3px solid #333;
+            box-shadow: 0 4px 10px rgba(0, 255, 255, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+            color: #00ffff;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 1em 0;
+        }
+        nav a {
+            color: #00ffff;
+            text-decoration: none;
+            margin: 0 1.5em;
+            font-size: 1.2em;
+            position: relative;
+        }
+        nav a::after {
+            content: '';
+            display: block;
+            height: 2px;
+            background: #00ffff;
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0;
+            transition: width 0.3s;
+        }
+        nav a:hover::after {
+            width: 100%;
+        }
+        .container {
+            padding: 2em 5em;
+        }
+        section {
+            margin-bottom: 2em;
+        }
+        .blog-post {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1.5em;
+            box-shadow: 0 4px 20px rgba(0, 255, 255, 0.3);
+            border: 1px solid #333;
+        }
+        .blog-post h2 {
+            margin-top: 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5em;
+            font-size: 1.6em;
+            color: #00ffff;
+        }
+        .blog-post p {
+            margin: 0;
+            color: #e0e0e0;
+        }
+        footer {
+            background: linear-gradient(145deg, #1a1a1a, #0d0d0d);
+            padding: 1em;
+            text-align: center;
+            font-size: 0.9em;
+            border-top: 3px solid #333;
+            box-shadow: 0 -4px 10px rgba(0, 255, 255, 0.2);
+        }
+        footer a {
+            color: #00ffff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Nomadiac Blog</h1>
+        <nav>
+            <a href="#theories">Theories</a>
+            <a href="#ideas">Ideas</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="theories">
+            <h2>Theories</h2>
+            <div class="blog-post">
+                <h2>The Theory of Quantum Emergence</h2>
+                <p>This theory explores the complex behaviors emerging from quantum mechanics and how they might have influenced the early universe.</p>
+            </div>
+            <!-- Add more blog posts about theories here -->
+        </section>
+
+        <section id="ideas">
+            <h2>Ideas</h2>
+            <div class="blog-post">
+                <h2>Future of AI and Human Integration</h2>
+                <p>Discussing potential future scenarios where AI and human cognition seamlessly integrate for advanced problem-solving.</p>
+            </div>
+            <!-- Add more blog posts about ideas here -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me via email at <a href="mailto:nomadiac@example.com">nomadiac@example.com</a>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nomadiac. All rights reserved. <a href="mailto:nomadiac@example.com">Contact me</a></p>
+    </footer>
+</body>
+</html>
